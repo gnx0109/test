@@ -82,6 +82,7 @@ public class Quickstart {
             token.setRememberMe(true);
             try {
                 currentUser.login(token);
+                system.out.println("aas");
             } catch (UnknownAccountException uae) {
                 log.info("There is no user with username of " + token.getPrincipal());
             } catch (IncorrectCredentialsException ice) {
